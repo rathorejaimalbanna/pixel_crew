@@ -6,9 +6,9 @@ export default function Tracking() {
     <div className={styles.tracking}>
       <div>
         <ul className={styles.trackUl}>
-          <li className={styles.trackItem}>1</li>
-          <li className={`${styles.trackItem} ${styles.item2}`}>2</li>
-          <li className={`${styles.trackItem} ${styles.item3}`}>3</li>
+          <li className={styles.trackItem}></li>
+          <li className={`${styles.trackItem} ${styles.item2}`}></li>
+          <li className={`${styles.trackItem} ${styles.item3}`}></li>
         </ul>
       </div>
         <div>
