@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styles from "./App.module.css"
+import Tracking from './components/tracking/tracking'
+import Details from './components/details/details'
+import Order from './components/details/order'
+import Map from './components/map/map'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.main}>
+      <Tracking/>
+      <div className={styles.content}>
+        <div className={styles.detailsDiv}>
+            <Details/>
+            <Order/>
+        </div>
+        <div className={styles.mapDiv}>
+        <Map/>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
-
-export default App;
